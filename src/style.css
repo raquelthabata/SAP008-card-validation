@@ -8,11 +8,16 @@ body {
 }
 
 @font-face {
+   font-family: 'maquina';
+   src: url(fontes/another_typewriter/atwriter.ttf) format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
    font-family:'forever' ;
    src: url('fontes/Always\ Forever\ Bold.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
-   box-shadow: 10px 15px 40px 10px white;
 }
 
   h1 {
@@ -64,14 +69,27 @@ div.quadrado {
 }
 
 p {
-   font-family: 'forever';
+   font-family: 'maquina';
    font-weight: normal;
    color: rgb(175, 0, 0);
-   font-family: 'Special Elite';
-   font-size: 25px;
+   font-size: 20px;
    text-align: right, justify;
    margin-left: 27cm;
    margin-top: -11cm;
+   max-width: 480px;
+   border-radius: 10px;
+  
 
 }
+
+p::after 
+   {content: '|';
+   margin-left: 5px;
+   opacity: 1;
+   animation: blink .10s infinite;
+}
+
+@keyframes blink {
+   0%, 100% { opacity: 1;}
+50% { opacity: 0;} }
 
