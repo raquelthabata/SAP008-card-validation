@@ -63,3 +63,15 @@ div.quadrado {
    font-size: 35px;
 }
 
+p {
+   font-family: 'forever';
+   font-weight: normal;
+   color: rgb(175, 0, 0);
+   font-family: 'Special Elite';
+   font-size: 25px;
+   text-align: right, justify;
+   margin-left: 27cm;
+   margin-top: -11cm;
+
+}
+
