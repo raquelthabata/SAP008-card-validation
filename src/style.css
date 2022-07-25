@@ -1,0 +1,65 @@
+body {
+    
+    background-image: url('imagens/fundopaginaa.gif');
+    background-attachment: fixed;
+    background-size: 1370px 670px;
+
+  
+}
+
+@font-face {
+   font-family:'forever' ;
+   src: url('fontes/Always\ Forever\ Bold.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+   box-shadow: 10px 15px 40px 10px white;
+}
+
+  h1 {
+   font-family:'forever';
+   font-size: 100px;
+   font-weight: normal;
+   margin-top: 77px;
+   position: absolute;
+   margin-left: 580px;
+   color: rgb(1, 48, 37);
+  
+} 
+
+ 
+ #validador{
+    font-family:'forever';
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 50px 2px black;
+    color: rgb(1, 48, 37);
+    background-image: url('imagens/ondas.jpeg');
+    margin-top: 30px;
+    margin-left: 560px;
+    font-size: 1.2cm;
+ }
+
+
+div.quadrado {
+   width: 700px;
+   height: 400px;
+   border-radius: 20px;
+   box-shadow: 15px 15px 40px 2px black;
+  margin-top: 90px;
+  margin-left: 300px;
+  background-image: url('imagens/cartaodesing.svg');  
+
+
+}
+
+#numerocartao {
+   width: 430px;
+   height: 35px;
+   position: relative; top: 310px; left: 425px;
+   border-radius: 20px;
+   border: 0px; 
+   font-size: 35px;
+}
+
