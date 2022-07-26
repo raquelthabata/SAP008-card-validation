@@ -20,3 +20,4 @@ pegarvalor.addEventListener("click", function(e) {
     const value = numerocartao.value;
     console.log(value);
 });
+
