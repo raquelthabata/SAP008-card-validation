@@ -6,6 +6,25 @@ const validator = {
     }
 
     return arrayNumber;
+  },
+
+  isValueNotEmpty: (valueImput) => {
+    if(valueImput === "" || valueImput.length === 0){
+
+      alert("Por favor, preencha o campo informando o numero do cartão!");
+      return false;
+
+    }else if(isNaN(valueImput)){
+
+      alert("Somente é valido digitar números!");
+      return false;
+
+    }
+    else {
+
+      return true;
+
+    }
   }
 };
 
