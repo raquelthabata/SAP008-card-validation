@@ -20,17 +20,17 @@ body {
    font-style: normal;
 }
 
+
   h1 {
    font-family:'forever';
    font-size: 100px;
    font-weight: normal;
-   margin-top: 77px;
+   margin-top: 65px;
    position: absolute;
    margin-left: 580px;
    color: rgb(1, 48, 37);
   
 } 
-
  
  #send{
     font-family:'forever';

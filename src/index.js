@@ -10,10 +10,11 @@ function typeWriter(e) {
         setTimeout(() => e.innerHTML += letra, 75 * i)
     });
 }
-const palavras = document.querySelector('p')
+const palavras = document.querySelector('h1')
 typeWriter(palavras) 
 
 const pegarvalor = document.querySelector ("#send");
+
 pegarvalor.addEventListener("click", function(e) {
     e.preventDefault();
     const numerocartao = document.querySelector("#numerocartao");
@@ -36,10 +37,14 @@ pegarvalor.addEventListener("click", function(e) {
     console.log(arrayNumber);
 
     var soma= arrayNumber.reduce((soma,arrayNumber)=> soma+arrayNumber, 0);//soma de todos os números do array
+
+    let maskNumberForChar = validator.maskify(arrayNumber).toString();
+    let semVirgula = maskNumberForChar.replaceAll(",", "");
+
     if (soma%10==0){
-        alert ( "Válido")
+        alert (`O número de cartão ${semVirgula} é válido`)
     
     } else {
-        alert('invalido') 
+        alert (`O número de cartão ${semVirgula} é inválido`)
     }
 });
