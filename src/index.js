@@ -30,8 +30,7 @@ pegarvalor.addEventListener("click", function(e) {
                  arrayNumber[a] = valueNumberPosition;}
 
         var soma= arrayNumber.reduce((soma,arrayNumber)=> soma+arrayNumber, 0);
-
-        let maskNumberForChar = validator.maskify(arrayNumber).toString();
+        let maskNumberForChar = validator.maskify(value.split('').map(Number)).toString();
         let semVirgula = maskNumberForChar.replaceAll(",", "");
 
         if (soma%10==0){
